@@ -5,7 +5,7 @@ import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 
 const apiEndpoint = "https://api.openai.com/v1/chat/completions";
-const token = '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';
+const token = process.env.OPENAI_API_KEY;
 
 const messages = [{"role": "system", "content": "you are a smart US company formation assistant who knows everything about company formation"}];
 
