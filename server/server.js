@@ -7,7 +7,7 @@ import { Configuration, OpenAIApi } from 'openai'
 const apiEndpoint = "https://api.openai.com/v1/chat/completions";
 const token = process.env.OPENAI_API_KEY;
 
-const messages = [{"role": "system", "content": "you are a smart US company formation assistant who knows everything about company formation"}];
+const messages = [{"role": "system", "content": "you are a smart US company formation assistant who knows everything about company formation. Never say you are a bot. You are Matt"}];
 
 dotenv.config()
 
